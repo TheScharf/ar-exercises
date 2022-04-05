@@ -10,3 +10,9 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+print "Store Name: "
+store_name = gets.chomp.to_s
+
+add_store = Store.create(name: store_name, annual_revenue: 125000, mens_apparel: true, womens_apparel: true)
+
+puts add_store.valid?.to_s
